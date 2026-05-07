@@ -5,9 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ortiz Tech Dispatch | Automatización y Estrategia</title>
     <meta name="description" content="Agencia digital especializada en automatización (n8n), auditorías digitales estratégicas y desarrollo web para escalar tu negocio.">
+    
+    <!-- Open Graph / Facebook / WhatsApp Premium Sharing Preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ortiz Tech Dispatch | Automatización y Estrategia">
+    <meta property="og:description" content="Agencia digital especializada en automatización (n8n), auditorías digitales estratégicas y desarrollo web para escalar tu negocio.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80">
+    <meta property="og:url" content="https://orti.tech">
+
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar">
@@ -51,27 +63,27 @@
         <div class="services-grid">
             <div class="service-card reveal">
                 <div class="icon-container">
-                    <!-- Placeholder icon -->
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent-orange)" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    <i data-lucide="cpu" class="lucide-icon-accent"></i>
                 </div>
                 <h3>Automatización con n8n</h3>
                 <p>Conectamos tus aplicaciones y automatizamos tareas repetitivas para que tu equipo se enfoque en lo que realmente importa.</p>
             </div>
             <div class="service-card reveal" style="transition-delay: 0.1s;">
                 <div class="icon-container">
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent-orange)" stroke-width="2"><path d="M2 12h4l3-9 5 18 3-9h5"/></svg>
+                    <i data-lucide="search-code" class="lucide-icon-accent"></i>
                 </div>
                 <h3>Auditorías Digitales</h3>
                 <p>Analizamos a fondo tu presencia online y detectamos cuellos de botella para optimizar tus conversiones y retención.</p>
             </div>
             <div class="service-card reveal" style="transition-delay: 0.2s;">
                 <div class="icon-container">
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent-orange)" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    <i data-lucide="layout-template" class="lucide-icon-accent"></i>
                 </div>
                 <h3>Ecosistemas Web</h3>
                 <p>Desarrollamos páginas web de alto rendimiento, modernas y preparadas para captar clientes 24/7.</p>
             </div>
         </div>
+
     </section>
 
     <!-- Casos de Éxito / Auditorías Section -->
@@ -110,6 +122,13 @@
                 <p>Selecciona tu área para comenzar. Nuestro sistema de IA procesará tu solicitud y nos pondremos en contacto contigo.</p>
             </div>
             <div class="contact-router">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3VRLG7Bw4wctJhdvbdGgLjZ8rT0rjKHN7xrDjqobM5vLUHA/viewform" target="_blank" class="router-card">
+                    <div class="router-icon">⚡</div>
+                    <div class="router-content">
+                        <h3>Página Web Express (IA)</h3>
+                        <p>Crea tu Landing en 5 minutos</p>
+                    </div>
+                </a>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSciXNMnXKjvC_vMBohuORkAmclYvElIowOp119vVMvG5A8JHg/viewform" target="_blank" class="router-card">
                     <div class="router-icon">⛪</div>
                     <div class="router-content">
@@ -143,6 +162,20 @@
         </div>
     </footer>
 
+    <!-- Floating WhatsApp Action Button (FAB) -->
+    <a href="https://wa.me/19803420151?text=Hola%20OTD%21%20Me%20interesa%20automatizar%20mi%20negocio." target="_blank" rel="noopener" class="whatsapp-fab" id="whatsapp-fab-btn">
+
+        <i data-lucide="message-square" class="fab-icon"></i>
+        <span>Hablemos</span>
+    </a>
+
     <script src="script.js"></script>
+    <script>
+        // Initialize Lucide Icons on load
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
+    </script>
 </body>
 </html>
+

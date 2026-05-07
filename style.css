@@ -518,3 +518,69 @@ footer p {
         padding: 40px 20px;
     }
 }
+
+/* Premium WhatsApp Floating Action Button (FAB) */
+.whatsapp-fab {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: #25D366;
+    color: #fff !important;
+    text-decoration: none;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 0.85rem 1.5rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 25px rgba(37, 211, 102, 0.4);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+    animation: pulse-green 2s infinite;
+}
+
+.whatsapp-fab:hover {
+    transform: scale(1.08) translateY(-2px);
+    box-shadow: 0 6px 35px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-fab .fab-icon {
+    width: 22px;
+    height: 22px;
+}
+
+@keyframes pulse-green {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+/* Lucide Icon Style */
+.lucide-icon-accent {
+    width: 40px;
+    height: 40px;
+    color: var(--accent-orange);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .lucide-icon-accent {
+    transform: scale(1.1) rotate(5deg);
+}
+
+@media (max-width: 768px) {
+    .whatsapp-fab {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        padding: 0.8rem 1.2rem;
+        font-size: 0.85rem;
+    }
+}
+
